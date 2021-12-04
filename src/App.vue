@@ -115,7 +115,7 @@ export default {
 
   min-height: 410px;
   padding: 15px 15px;
-  width: 1440px;
+  width: 100%;
 }
 
 .main {
