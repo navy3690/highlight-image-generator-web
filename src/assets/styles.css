@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+.screen a {
+    display: contents;
+    text-decoration: none;
+}
+
+.container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.container-center-horizontal > * {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+:root {
+    --black-2:
+            rgba(0, 0, 0, 0.439);
+    --black: rgb(0, 0, 0);
+    --delta:
+            rgba(162, 162, 162, 1);
+    /*--sunglow:*/
+    /*        rgba(252, 212, 72, 1);*/
+    --sunglow:
+            rgba(69,69,230,100);
+    --black-white:
+            rgba(255, 253, 247, 1);
+    --white:
+            rgba(255, 255, 255, 1);
+
+    --font-size-m: 18px;
+    --font-size-l: 24px;
+    --font-size-xl: 30px;
+    --font-size-l2: 45px;
+
+    --font-family-roboto: "Roboto";
+}
+
+.roboto-normal-black-20px {
+    color: var(--black);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-normal-black-30px {
+    color: var(--black);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xl);
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-normal-delta-20px {
+    color: var(--delta);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-normal-black-white-50px {
+    color: var(--black-white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l2);
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-normal-black-20px-2 {
+    color: var(--black-2);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-normal-white-30px {
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xl);
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-normal-white-24px {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-weight: 400;
+    font-style: normal;
+}
