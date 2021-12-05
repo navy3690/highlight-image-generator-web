@@ -81,14 +81,22 @@ export default {
       this.query = this.youtube_link.slice(-5)
     },
     download: function (){
-      axios.get('api/downloader/?youtube_name='+ this.query + '/').then(function(response){
-            console.log(response)
-          })
+      axios({
+        url:'api/downloader/?youtube_name='+ this.query + '/',
+      method:'GET',
+      responseType:'blob',}).then((response) => {
+        var fileURL = window.URL.createObjectURL(new Blob([response.data]));
+        var fileLink = document.createElement('a');
+
+        fileLink.href = fileURL;
+        fileLink.setAttribute('download', 'captured_images.zip');
+        document.body.appendChild(fileLink);
+
+        fileLink.click();
+      })
           .catch(function(error){
             console.log(error);
-          }).finally(()=>{
-            console.log("success")
-      });
+          })
     },
   }
 };
