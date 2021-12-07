@@ -114,7 +114,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: 900px;
-  width: 1440px;
+  width: 100%;
 }
 
 .overlap-group {
