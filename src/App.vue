@@ -28,11 +28,13 @@
         </form>
       </div>
       <div class="text-3">
-          <span
-          ><span class="roboto-normal-black-30px">Highlight Image Generator</span>
-            <!--            <span class="roboto-normal-black-20px">{{ spanText2 }}</span-->
+          <span class="roboto-normal-black-30px">Highlight Image Generator</span>
+        <pre></pre>
+        <h1 class="roboto-normal-black-20px-2">Generate transcript-annotated screenshots for your favorite videos! <br>
+          First, enter a YouTube link that you want to capture and desired time range.<br>
+          Then, just click ‘Generate’ button to process video to images.<br>
+          After processing finishes, click ‘Download’ button to download a .zip file of the captured images.</h1>
             <!--          ><span class="roboto-normal-black-20px-2">{{ spanText3 }}</span>-->
-          </span>
       </div>
     </div>
   </div>
@@ -300,7 +302,8 @@ export default {
   margin-right: 1px;
   margin-top: 53px;
   text-align: center;
-  width: 1235px;
+  width: 70%;
+  line-height: 30px;
 }
 
 .searchlink {
@@ -334,6 +337,11 @@ export default {
   font-size: var(--font-size-m);
   font-weight: 400;
   font-style: normal;
+}
+
+.content {
+  width: 50%;
+  text-align: center;
 }
 
 
