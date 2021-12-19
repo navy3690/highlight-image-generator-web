@@ -43,8 +43,6 @@
 <script>
 import axios from 'axios';
 import Loading from 'vue-loading-overlay';
-import 'vue-loading-overlay/dist/vue-loading.css'
-// import { FacebookLoader } from 'vue-spinners-css';
 
 export default {
   name: "App",
@@ -61,8 +59,10 @@ export default {
   components:{
     Loading
   },
+
   methods: {
     submitForm: function (){
+
       var data = {
         youtube_link: this.youtube_link,
         start_time: this.start_time,
@@ -70,15 +70,22 @@ export default {
       }
       console.log(data)
       this.loading = true
+      var err = false
       axios.post('api/generator/', data).then(function(response){
             console.log(response);
             this.generated = true;
+            this.loading = false;
           })
           .catch(function(error){
+            console.log("BBB")
             console.log(error);
+            alert('The face was not recognized. Please put another time section or another video.');
+            console.log("CCC")
+            err = true
           }).finally(()=>{
-            this.loading = false
-            this.generated = true;
+          if (err == true){
+            this.$router.go(this.$router.currentRoute);
+          }
       });
       this.query = this.youtube_link.slice(-5)
     },
