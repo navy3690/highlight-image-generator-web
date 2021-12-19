@@ -1,6 +1,6 @@
 # highlighter_web
 
-This is part of [highlighter-image-generator](https://github.com/jessyoon14/highlight-image-generator).
+This is part of the project [highlighter-image-generator](https://github.com/jessyoon14/highlight-image-generator).
 Please refer [highlighter-image-generator](https://github.com/jessyoon14/highlight-image-generator) to setup envtionment.
 
 To run webpage,
