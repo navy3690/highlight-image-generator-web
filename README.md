@@ -1,23 +1,11 @@
 # highlighter_web
 
-## Project setup
-```
-yarn install
-```
+This is part of [highlighter-image-generator](https://github.com/jessyoon14/highlight-image-generator).
+Please refer [highlighter-image-generator](https://github.com/jessyoon14/highlight-image-generator) to setup envtionment.
 
-### Compiles and hot-reloads for development
+To run webpage,
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+npm run serve
 ```
 
 ### Customize configuration
