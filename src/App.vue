@@ -78,10 +78,8 @@ export default {
             this.loading = false;
           })
           .catch(function(error){
-            console.log("BBB")
             console.log(error);
             alert('The face was not recognized. Please put another time section or another video.');
-            console.log("CCC")
             err = true
           }).finally(()=>{
           if (err == true){
